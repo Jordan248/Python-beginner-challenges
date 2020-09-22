@@ -35,8 +35,15 @@ print ('The common numbers in both lists are:' ,c)
 
 d = random.sample(range(1,30), 12)
 e = random.sample(range(1,30), 20)
-
+f = []
 print ('Random lists below')
 print (d)
 print (e)
+
+for x in d:
+    if x in e:
+        if x not in f:
+            f.append(x)
+
+print ('The common numbers in both lists are:', f)
 
